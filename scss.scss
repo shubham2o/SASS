@@ -102,6 +102,7 @@ nav {
 }
 
 
+//===== Passing Variables to a Mixin =====//
 @mixin  bordered($color,$width)  {
     border: $width solid $color;
     font-size: 20px;
@@ -118,10 +119,21 @@ nav {
 }
 
 
+//===== Default Values for a Mixin =====//
 @mixin default ($colormy:blue, $widthmy:5px) {
-     border: $widthmy solid $colormy;
+    border: $widthmy solid $colormy;
 }
 
 .mytips {
     @include default($colormy:orange );
+}
+
+
+//===== Using a Mixin For Vendor Prefixes =====//
+@mixin transform ($propertymy) {
+    transform: $propertymy;
+}
+
+.mybox {
+    @include transform(rotate(20deg));
 }

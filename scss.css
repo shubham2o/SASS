@@ -86,4 +86,9 @@ nav a {
 .mytips {
   border: 5px solid orange;
 }
+
+.mybox {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
 /*# sourceMappingURL=scss.css.map */
