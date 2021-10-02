@@ -86,3 +86,17 @@ nav {
         overflow: hidden;
     }
 }
+
+
+//==== @mixin ====//
+@mixin important-text {
+    color: yellow;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+.danger {
+    @include important-text;
+    background-color: green;
+}

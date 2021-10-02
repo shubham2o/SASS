@@ -62,4 +62,12 @@ nav a {
   text-transform: lowercase;
   text-overflow: hidden;
 }
+
+.danger {
+  color: yellow;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: green;
+}
 /*# sourceMappingURL=scss.css.map */
