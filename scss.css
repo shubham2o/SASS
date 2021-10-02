@@ -82,4 +82,8 @@ nav a {
   font-size: 20px;
   background-color: salmon;
 }
+
+.mytips {
+  border: 5px solid orange;
+}
 /*# sourceMappingURL=scss.css.map */

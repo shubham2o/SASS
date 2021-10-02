@@ -116,3 +116,12 @@ nav {
     @include bordered(4px, blue);  //===== Call mixin with two values =====//
     background-color: salmon;
 }
+
+
+@mixin default ($colormy:blue, $widthmy:5px) {
+     border: $widthmy solid $colormy;
+}
+
+.mytips {
+    @include default($colormy:orange );
+}
