@@ -40,3 +40,16 @@ $color1:red;
 .two {
     color: $color1;
 }
+
+
+//===== !global =====//
+$color2:red;
+
+.three {
+    $color2:green !global;
+    color: $color2;
+}
+
+.four {
+    color: $color2;
+}
