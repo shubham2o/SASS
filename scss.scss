@@ -71,3 +71,18 @@ nav {
         text-decoration: none;
     }
 }
+
+
+//===== Sass Nested Properties =====//
+.five {
+    font: {
+        family: Helvetica, sans-serif;
+        size: 18px;
+        weight: bold;
+    }
+    text: {
+        align:center;
+        transform: lowercase;
+        overflow: hidden;
+    }
+}

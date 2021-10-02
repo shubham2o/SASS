@@ -53,4 +53,13 @@ nav a {
   padding: 6px 12px;
   text-decoration: none;
 }
+
+.five {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: lowercase;
+  text-overflow: hidden;
+}
 /*# sourceMappingURL=scss.css.map */
