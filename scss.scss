@@ -1,10 +1,11 @@
 $primary1:#000000;
 $primary2:#ffffff;
 $primary3:#bbbbbb;
-
+$text-align:center;
 body {
     background-color: $primary1;
     color: $primary2;
+    text-align: $text-align;
 }
 
 .div1 h1{
