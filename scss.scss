@@ -100,3 +100,19 @@ nav {
     @include important-text;
     background-color: green;
 }
+
+
+@mixin  bordered($color,$width)  {
+    border: $width solid $color;
+    font-size: 20px;
+}
+
+.myarticle {
+    @include bordered(2px, red);   //===== Call mixin with two values =====//
+    background-color: burlywood;
+}
+
+.mynotes {
+    @include bordered(4px, blue);  //===== Call mixin with two values =====//
+    background-color: salmon;
+}

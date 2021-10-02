@@ -70,4 +70,16 @@ nav a {
   border: 1px solid blue;
   background-color: green;
 }
+
+.myarticle {
+  border: red solid 2px;
+  font-size: 20px;
+  background-color: burlywood;
+}
+
+.mynotes {
+  border: blue solid 4px;
+  font-size: 20px;
+  background-color: salmon;
+}
 /*# sourceMappingURL=scss.css.map */
