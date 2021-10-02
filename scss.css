@@ -21,4 +21,12 @@ body {
 #container {
   width: 680px;
 }
+
+.one {
+  color: green;
+}
+
+.two {
+  color: red;
+}
 /*# sourceMappingURL=scss.css.map */

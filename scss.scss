@@ -12,12 +12,11 @@ body {
     color: $primary3;
 }
 */
-
+//===== First Saas Example =====//
 $myfontfamily:Helvetica, sans-serif;
 $myfontsize:18px;
 $mycolor:red;
 $mywidth:680px;
-
 
 .body1 {
     font-family: $myfontfamily;
@@ -25,7 +24,19 @@ $mywidth:680px;
     color: $mycolor;
 }
 
-
 #container {
     width: $mywidth;
+}
+
+
+//===== Sass Variable Scope =====//
+$color1:red;
+
+.one {
+    $color1:green;
+    color:$color1;
+}
+
+.two {
+    color: $color1;
 }
