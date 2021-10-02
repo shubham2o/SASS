@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=scss.css.map */
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.div1 h1 {
+  color: #bbbbbb;
+}
+/*# sourceMappingURL=scss.css.map */

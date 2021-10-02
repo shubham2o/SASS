@@ -1,0 +1,12 @@
+$primary1:#000000;
+$primary2:#ffffff;
+$primary3:#bbbbbb;
+
+body {
+    background-color: $primary1;
+    color: $primary2;
+}
+
+.div1 h1{
+    color: $primary3;
+}
