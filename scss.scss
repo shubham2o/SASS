@@ -12,3 +12,20 @@ body {
     color: $primary3;
 }
 */
+
+$myfontfamily:Helvetica, sans-serif;
+$myfontsize:18px;
+$mycolor:red;
+$mywidth:680px;
+
+
+.body1 {
+    font-family: $myfontfamily;
+    font-size: $myfontsize;
+    color: $mycolor;
+}
+
+
+#container {
+    width: $mywidth;
+}

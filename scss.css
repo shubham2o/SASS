@@ -1,9 +1,24 @@
-/* body {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
+/*$primary1:#000000;
+$primary2:#ffffff;
+$primary3:#bbbbbb;
+$text-align:center;
+body {
+    background-color: $primary1;
+    color: $primary2;
+    text-align: $text-align;
 }
 
-.div1 h1 {
-  color: #bbbbbb;
-} */
+.div1 h1{
+    color: $primary3;
+}
+*/
+.body1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+}
+/*# sourceMappingURL=scss.css.map */
