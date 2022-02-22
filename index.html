@@ -1,171 +1,148 @@
- <!DOCTYPE html>
- <html>
-     <head>
-         <meta charset="utf-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <title>SASS</title>
-         <meta name="description" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="css.css">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SASS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+
+        <!----------- Latest compiled --------------
+        ------------- and --------------------------
+        ------------- minified CSS ---------------->    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!----------- jQuery -----------------------
+        ------------- library ----------------------
+        ------------------------------------------->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!----------------------------------------
+        ------------ Popper JS -------------------
+        -----------------------------------------> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!------------- Latest ---------------------
+        -------------- compiled --------------------
+        -------------- JavaScript ----------------->  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="scss.css">
+    </head>
+    <!--=============================================================================================================================================================
+    ==============================================================================================================================================================-->
+    <body>    
+        <!-- <div class="container div1">
+            <h1 class="display-4">HEADING1 (DISPLAY2)</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sint voluptas distinctio libero accusamus commodi quam deleniti quae ex 
+                illo corporis ea ipsum facilis magnam odit consequatur quos, nemo ducimus.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto, perferendis necessitatibus ut illo odio quisquam perspiciatis 
+                dolorum tenetur architecto incidunt, reprehenderit a doloremque? Cum error voluptas dolor eligendi accusantium.
+            </p>
+        </div> -->
+
+        <div class="container" id="container">
+            <div class="body1">
+                <h1>Saas</h1>
+                <p>Hello, how are you?</p>
+                <p>This is the first saas example.</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container" >
+            <h1 class="one">Sass Variable Scope</h1>
+            <p class="two">Saas varibales are only available at the level of nesting where they are defined.</p>
+            <p class="two">This is the example of Sass Variable Scope.</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <h1 class="three">Using SASS !global</h1>
+            <p class="four">The default behaviour for varibale scope can be overridden by using the !global switch.</p>
+            <p class="four">!global indicates that a variable is global, which means that it is accessible on all levels.</p>
+            <p class="four">Look at this example (same as above; but with !global added):</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <h1>Sass Nested Rules</h1>
+            <p>Sass lets you nest CSS selectors in the same way as HTML.</p>
+            <p>Look at an example of some Sass code for a site's navigation:</p>
+            <nav>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">SASS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container five">
+            <h1>Sass Nested Properties</h1>
+            <p>Many CSS properties have the same prefix, like font-family, font-size and font-weight or 
+                text-align, text-transform and text-overflow.
+            </p>
+            <p>With Sass you can write them as nested properties:</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container danger">
+            <h1>@mixin</h1>
+            <p>The following example creates a mixin named "important-text":</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <h1>Passing Variables to a Mixin</h1>
+            <p class="myarticle">Mixins accept arguements. This way you can pass variables to a mixin.</p>
+            <p class="mynotes">Here is how to definie a mixin with arguements.</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container mytips">
+            <h1>Default Values for a Mixin</h1>
+            <p>It is also possible to define default values for mixin varibales:</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container mybox" style="width: 250px;border: 2px solid purple;">
+            <h1>Using a Mixin For Vendor Prefixes</h1>
+            <p>Another good use of a mixin is for vendor prefixes.</p>
+            <p>Here is an example for transform:</p>
+        </div>
 
 
-         <!----------- Latest compiled --------------
-         ------------- and --------------------------
-         ------------- minified CSS ---------------->
-        
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-         <!----------- jQuery -----------------------
-         ------------- library ----------------------
-         ------------------------------------------->
-        
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
-         <!----------------------------------------
-         ------------ Popper JS -------------------
-         ----------------------------------------->
-        
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        
-        
-         <!------------- Latest ---------------------
-         -------------- compiled --------------------
-         -------------- JavaScript ----------------->
-        
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-         <link rel="stylesheet" href="scss.css">
-     </head>
-      <!--=============================================================================================================================================================
-      ==============================================================================================================================================================-->
-     <body>    
-         <!-- <div class="container div1">
-             <h1 class="display-4">HEADING1 (DISPLAY2)</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sint voluptas distinctio libero accusamus commodi quam deleniti quae ex 
-                 illo corporis ea ipsum facilis magnam odit consequatur quos, nemo ducimus.
-             </p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto, perferendis necessitatibus ut illo odio quisquam perspiciatis 
-                 dolorum tenetur architecto incidunt, reprehenderit a doloremque? Cum error voluptas dolor eligendi accusantium.
-             </p>
-         </div> -->
+        <br>
+        <br>
 
-    
-         <div class="container" id="container">
-             <div class="body1">
-                 <h1>Saas</h1>
-                 <p>Hello, how are you?</p>
-                 <p>This is the first saas example.</p>
-             </div>
-         </div>
-
-
-         <br>
-         <br>
-
-        
-         <div class="container" >
-             <h1 class="one">Sass Variable Scope</h1>
-             <p class="two">Saas varibales are only available at the level of nesting where they are defined.</p>
-             <p class="two">This is the example of Sass Variable Scope.</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container">
-             <h1 class="three">Using SASS !global</h1>
-             <p class="four">The default behaviour for varibale scope can be overridden by using the !global switch.</p>
-             <p class="four">!global indicates that a variable is global, which means that it is accessible on all levels.</p>
-             <p class="four">Look at this example (same as above; but with !global added):</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container">
-             <h1>Sass Nested Rules</h1>
-             <p>Sass lets you nest CSS selectors in the same way as HTML.</p>
-             <p>Look at an example of some Sass code for a site's navigation:</p>
-             <nav>
-                 <ul>
-                     <li><a href="#">HTML</a></li>
-                     <li><a href="#">CSS</a></li>
-                     <li><a href="#">SASS</a></li>
-                 </ul>
-             </nav>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container five">
-             <h1>Sass Nested Properties</h1>
-             <p>Many CSS properties have the same prefix, like font-family, font-size and font-weight or 
-                 text-align, text-transform and text-overflow.
-             </p>
-             <p>With Sass you can write them as nested properties:</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container danger">
-             <h1>@mixin</h1>
-             <p>The following example creates a mixin named "important-text":</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container">
-             <h1>Passing Variables to a Mixin</h1>
-             <p class="myarticle">Mixins accept arguements. This way you can pass variables to a mixin.</p>
-             <p class="mynotes">Here is how to definie a mixin with arguements.</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container mytips">
-             <h1>Default Values for a Mixin</h1>
-             <p>It is also possible to define default values for mixin varibales:</p>
-         </div>
-
-
-         <br>
-         <br>
-
-
-         <div class="container mybox" style="width: 250px;border: 2px solid purple;">
-             <h1>Using a Mixin For Vendor Prefixes</h1>
-             <p>Another good use of a mixin is for vendor prefixes.</p>
-             <p>Here is an example for transform:</p>
-         </div>
-
-        
-         <br>
-         <br>
-
-
-         <div class="container ">
-             <h1>Sass @extend Directive</h1>
-             <p>The @extend directive lets you share a set of CSS properties from one selector to another.</p>
-             <p>The @extend directive is useful if you have almost identically styled elements that only differ 
-                 in some small details.
-             </p>
-             <button type="button" class="btn button-report">Button Report</button>
-             <button type="button" class="btn button-submit">Button Submit</button>
-         </div>
-     </body> 
- </html>
+        <div class="container ">
+            <h1>Sass @extend Directive</h1>
+            <p>The @extend directive lets you share a set of CSS properties from one selector to another.</p>
+            <p>The @extend directive is useful if you have almost identically styled elements that only differ 
+                in some small details.
+            </p>
+            <button type="button" class="btn button-report">Button Report</button>
+            <button type="button" class="btn button-submit">Button Submit</button>
+        </div>
+    </body> 
+</html>
